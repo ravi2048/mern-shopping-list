@@ -1,5 +1,5 @@
 @host = https://secure-sierra-02938.herokuapp.com
-@content-type = application/json
+@Content-Type = application/json
 @id = 61d5b0afda06b0d60102ea60
 ###
 GET {{host}}/api/items
