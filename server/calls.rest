@@ -1,0 +1,43 @@
+@host = https://secure-sierra-02938.herokuapp.com
+@content-type = application/json
+@id = 61d5b0afda06b0d60102ea60
+###
+GET {{host}}/api/items
+###
+
+###
+POST {{host}}/api/items
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZjRmYWZiOTE3MjQyM2M2YzBjYjNhNyIsImlhdCI6MTY0MzQ0NDk4NywiZXhwIjoxNjQzNDQ4NTg3fQ.DPt-CSWzmZyhvcLVqKlXFaNeHKs3lpI97uFapIVfi9o
+
+{
+    "name": "Ravi Yadav1 with token"
+}
+###
+POST {{host}}/api/users
+Content-type: application/json
+
+{
+    "name": "Monu Yadav",
+    "email": "monuyasasadav27c7@gmail.com",
+    "password": "abcadwefr"
+}
+###
+
+POST {{host}}/api/auth
+Content-Type: application/json
+
+{
+    "email": "monuyadav@gmail.com",
+    "password": "abcadwefr"
+}
+###
+
+GET {{host}}/api/auth/user
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZjRlZTFiZjk2MzBlMTE4YzRmNWYxNiIsImlhdCI6MTY0MzQ3ODA0MCwiZXhwIjoxNjQzNDgxNjQwfQ.HWo-UdGmKFSd_n9l1VlfVIbKW04pF4Rxjl6W0IQDNYM
+
+###
+
+
+DELETE {{host}}/api/items/{{id}}
+###
