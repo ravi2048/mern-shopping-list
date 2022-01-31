@@ -1,6 +1,6 @@
 # React App Created With Node, Express and MongoDB
 
-This project if a full stack web app where you can add or deleted added items. This app uses JWT auth for login. Its backend is deployed on heroku app https://secure-sierra-02938.herokuapp.com/
+This project if a full stack web app where you can add or deleted added items. This app uses JWT auth for login. Its backend is deployed on heroku app https://secure-sierra-02938.herokuapp.com/api/items
 
 ## Snapshots
 ![Screenshot from 2022-01-31 08-36-41](https://user-images.githubusercontent.com/50525873/151733674-d6de8327-1c25-4292-8230-db4492cc843e.png)
